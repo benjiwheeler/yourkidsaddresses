@@ -1,0 +1,159 @@
+/* from http://www.bluthemes.com/blog/3/clearing-bootstrap-3-columns
+*/
+/*  Bootstrap Clearfix */
+
+/*  Tablet  */
+@media (min-width:767px){
+
+  /* Column clear fix */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1),
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1){
+background-color: blue;
+    clear: none;
+  }
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+    clear: left;
+  }
+}
+
+
+/*  Medium Desktop  */
+@media (min-width:992px){
+
+  /* Column clear fix */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1),
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+    clear: none;
+  }
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1){
+background-color: blue;
+    clear: left;
+  }
+}
+
+
+/*  Large Desktop  */
+@media (min-width:1200px){
+
+  /* Column clear fix */
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1),
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+background-color: red;
+    clear: none;
+  }
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1){
+    clear: left;
+  }
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Littledays';
+  src: url('/Littledays.ttf')  format('truetype');
+}
+
+
+  body { font-family: verdana, arial, sans-serif; font-size: small; 
+/* border: 10px solid
+#453900; */
+background-image: url("skulls.png");
+ }
+  td { font-family: verdana; font-size: small; }
+  h1 { margin: 15px; text-align: center; 
+font-family: Littledays, Trebuchent,
+Georgia, Times;
+  font-size: 4em; 
+color: 594A02; }
+
+/* Override the bootstrap style */
+blockquote {
+    border-left: none;
+font-size: 1em;
+}
+
+.address {
+// height: 18em;
+}
+
+img {
+border: 2px solid #59a;
+}
+img.h {
+width: 30vw; 
+}
+img.v {
+width: 20vw; 
+}
+#images {
+position: relative;
+margin: 20px auto;
+ text-align: center;
+}
+.imgwithcaption {
+width: 30vw; 
+position: relative;
+float: left;
+ text-align: center;
+}
+p.caption {
+margin-top: 1em;
+background-color: rgba(200,200,255,0.2);
+padding: .5em;
+}
+
+@media only screen and (max-width: 700px) {
+.imgwithcaption {
+width: 80vw; 
+float: none;
+display: block;
+margin: 20px auto;
+ text-align: center;
+}
+img.h {
+width: 80vw; 
+}
+img.v {
+width: 80vw; 
+}
+
+}
+
