@@ -1,15 +1,31 @@
 <html>
+<!-- jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+
+<!-- bootstrap -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- angular -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-sanitize.min.js"></script>
+
+
+<!-- birthdays -->
+<script src="birthdays.js"></script>
 
 <!-- Optional theme -->
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"> -->
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 <link href="style.css" rel="stylesheet">
-<body>
+<body ng-app="YourKidsAddressesApp">
+<script>
+
+</script>
 
 <!-- <p>Hippie dad picture: "One day I will have a lot of kids, and 
 write their addresses down in...
@@ -177,9 +193,21 @@ map</a> ]
 </blockquote></div>
 
 
-<div class="col-xs-0 col-sm-4 col-sm-12 col-lg-4" 
-style="clear: both">&nbsp;</div>
-<div class="col-xs-12 col-sm-4 col-sm-12 col-lg-4">
+<div class="clearfix">&nbsp;</div>
+
+
+<div class="col-xs-12 col-sm-4 col-sm-offset-1" ng-controller="BirthdayController">
+<h1>Birthdays</h1>
+<ul style="list-style-type: none; margin-left:5vw">
+<li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} <span ng-bind-html="person.last"></span> - 
+<span ng-bind-html="birthdayFmt(person, 'MMM d')"></span></li> 
+<!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - {{birthdayFmt(person, "MMM d")}}</li> 
+-->
+</ul>
+</div>
+
+
+<div class="col-xs-12 col-sm-4 col-sm-offset-1">
 <h1>Other useful info</h1>
 
 <a href="https://www.youtube.com/watch?v=GZQe_dysK5U">How to reenable a Google Calendar</a> that you have been invited to in the 
@@ -200,4 +228,3 @@ embarrassed to ask your grandchildren to help you find
 
 </body>
 </html>
-
