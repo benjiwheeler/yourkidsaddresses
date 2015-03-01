@@ -200,7 +200,7 @@ map</a> ]
 <h1>Birthdays</h1>
 <ul style="list-style-type: none; margin-left:5vw">
 <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} <span ng-bind-html="person.last"></span> - 
-<span ng-bind-html="birthdayFmt(person, 'MMM d')"></span></li> 
+<span ng-bind-html="birthdayFmt(person, 'MMM DD')"></span></li> 
 <!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - {{birthdayFmt(person, "MMM d")}}</li> 
 -->
 </ul>

@@ -109,7 +109,7 @@ angular.module('YourKidsAddressesApp.controllers', []
 
   $scope.birthdayDate = function(person) {
     var birthDate = new Date(2015, person.birthday.monthnum - 1, person.birthday.daynum);
-    console.log(person.first + birthDate + person.birthday.monthnum);
+    console.log(person.first + birthDate + person.birthday.daynum);
     return birthDate;
   };
   $scope.birthdayFmt = function(person, fmt) {
