@@ -10,8 +10,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 <!-- angular -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-sanitize.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-sanitize.js"></script>
 
 
 <!-- birthdays -->
@@ -23,9 +23,22 @@
 
 <link href="style.css" rel="stylesheet">
 <body ng-app="YourKidsAddressesApp">
-<script>
 
-</script>
+<div class="alert alert-success col-xs-12" role="alert" ng-controller="CalendarController" ng-show="anyToShow">
+<b style="float: left;">Upcoming birthdays:</b>
+<ul class="list-inline" >
+<li ng-repeat="person in nPeopleByUpcomingBirthday(3)">{{person.first}} <span ng-bind-html="person.last"></span> - 
+{{birthdayFmt(person, "MMM DD")}}
+</li>
+</ul>
+</div>
+
+<!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - 
+-->
+
+
+</div>
+
 
 <!-- <p>Hippie dad picture: "One day I will have a lot of kids, and 
 write their addresses down in...
@@ -34,6 +47,8 @@ whoah wait, is that Camus and Jane Fonda smoking a reefer? Hi guys!
 <p>Dad and Dylan picture: Why you might not want Dad taking care of your 
 kids.
  -->
+
+
 
 <h1>Your Kids&rsquo; Addresses</h1>
 
@@ -199,7 +214,7 @@ map</a> ]
 <div class="col-xs-12 col-sm-4 col-sm-offset-1" ng-controller="BirthdayController">
 <h1>Birthdays</h1>
 <ul style="list-style-type: none; margin-left:5vw">
-<li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} <span ng-bind-html="person.last"></span> - 
+<li ng-repeat="person in people | orderBy:birthdayDateWithoutYear">{{person.first}} <span ng-bind-html="person.last"></span> - 
 <span ng-bind-html="birthdayFmt(person, 'MMM DD')"></span></li> 
 <!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - {{birthdayFmt(person, "MMM d")}}</li> 
 -->
