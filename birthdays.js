@@ -146,25 +146,23 @@ var controllers = angular.module('YourKidsAddressesApp.controllers', []);
 
 controllers.controller('BirthdayController', ['$scope', function($scope) {
   $scope.people = people; //orderBy($scope.birthdayDate);
-$scope.birthdayFmt = birthdayFmt;
-//  $scope.birthdayDateWithoutYear = birthdayDateWithoutYear;
-  
-//		$scope.birthdayDateWithoutYear = birthdayDateWithoutYear;
+  $scope.birthdayFmt = birthdayFmt;
+  $scope.birthdayDateWithoutYear = birthdayDateWithoutYear;
+  //		$scope.birthdayDateWithoutYear = birthdayDateWithoutYear;
 }]);
 
 
 controllers.controller('CalendarController', ['$scope', function($scope) {
-    $scope.people = people;
-    $scope.nPeopleByUpcomingBirthday = function(numPeople) {
-  $scope.birthdayFmt = birthdayFmt;
-   var peopleByUpcomingBirthday = people.slice(0); // copy
-      peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
-      return peopleByUpcomingBirthday.slice(0, numPeople);
-//return people;
-    };
+  $scope.people = people;
+  $scope.nPeopleByUpcomingBirthday = function(numPeople) {
+    $scope.birthdayFmt = birthdayFmt;
+    var peopleByUpcomingBirthday = people.slice(0); // copy
+    peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
+    return peopleByUpcomingBirthday.slice(0, numPeople);
+    //return people;
+  };
   $scope.anyToShow = true;
-
-  }]);
+}]);
 
 
 
