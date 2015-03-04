@@ -13,14 +13,24 @@ background-image: url("skulls.png");
   td { font-family: verdana; font-size: small; }
 
   h1 { 
-padding-top: 80px; 
-padding-bottom: 5px; 
-
 text-align: center; 
 font-family: Littledays, Trebuchent,
 Georgia, Times;
   font-size: 4em; 
 color: 594A02; }
+
+h1.title {
+padding-top: 15px; 
+padding-bottom: 5px; 
+}
+
+.banner {
+margin: 15px 0;
+padding: 15px 20px 5px;
+border-top: 1px solid #cdc;
+border-bottom: 1px solid #cdc;
+color: #474;
+}
 
 /* Override the bootstrap style */
 blockquote {
@@ -55,10 +65,13 @@ float: left;
  text-align: center;
 */
 }
-p.caption {
+.caption {
 margin-top: 1em;
 margin-bottom: 2em;
-background-color: rgba(200,200,255,0.2);
 padding: .5em;
 }
 
+
+.panel {
+background-color: rgba(230,230,245,0.4);
+}

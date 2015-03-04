@@ -150,9 +150,15 @@ app.controller('BirthdayController', ['$scope', function($scope) {
 
 
 app.controller('CalendarController', ['$scope', function($scope) {
-  var peopleByUpcomingBirthday = angular.copy(people);//people.slice(0); 
-  peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
+  var peopleByUpcomingBirthday = Array();
   $scope.birthdayFmt = birthdayFmt;
+
+  function updatePeople(peopleArr) {
+    peopleByUpcomingBirthday = angular.copy(peopleArr);//people.slice(0); 
+    peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
+  }
+  updatePeople(people);
+
   $scope.nPeopleByUpcomingBirthday = function(numPeople) {
     return peopleByUpcomingBirthday.slice(0, numPeople);
     //return people;
