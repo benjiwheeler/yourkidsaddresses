@@ -102,7 +102,7 @@ var birthdayDateForYear = function(person, year) {
 };
 var birthdayDateWithoutYear = function(person) {
   var birthDate = birthdayDateForYear(person, 2015);
-  console.log(person.first + birthDate + person.birthday.daynum);
+//  console.log(person.first + birthDate + person.birthday.daynum);
   return birthDate;
 };
 var today = new Date();
@@ -139,12 +139,9 @@ var  birthdayFmt = function(person, fmt) {
   };
 
 var app = angular.module('YourKidsAddressesApp', [
-  'YourKidsAddressesApp.controllers'
   ,'ngSanitize']);
 
-var controllers = angular.module('YourKidsAddressesApp.controllers', []);
-
-controllers.controller('BirthdayController', ['$scope', function($scope) {
+app.controller('BirthdayController', ['$scope', function($scope) {
   $scope.people = people; //orderBy($scope.birthdayDate);
   $scope.birthdayFmt = birthdayFmt;
   $scope.birthdayDateWithoutYear = birthdayDateWithoutYear;
@@ -152,16 +149,17 @@ controllers.controller('BirthdayController', ['$scope', function($scope) {
 }]);
 
 
-controllers.controller('CalendarController', ['$scope', function($scope) {
-  $scope.people = people;
+app.controller('CalendarController', ['$scope', function($scope) {
+  var peopleByUpcomingBirthday = angular.copy(people);//people.slice(0); 
+  peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
+  $scope.birthdayFmt = birthdayFmt;
   $scope.nPeopleByUpcomingBirthday = function(numPeople) {
-    $scope.birthdayFmt = birthdayFmt;
-    var peopleByUpcomingBirthday = people.slice(0); // copy
-    peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
     return peopleByUpcomingBirthday.slice(0, numPeople);
     //return people;
   };
-  $scope.anyToShow = true;
+  $scope.anyToShow = function() { 
+    return (peopleByUpcomingBirthday.length > 0); 
+  };
 }]);
 
 

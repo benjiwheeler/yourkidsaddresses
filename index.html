@@ -1,4 +1,7 @@
 <html>
+<head><title>Your Kids' Addresses</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- jquery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
@@ -22,9 +25,10 @@
 
 
 <link href="style.css" rel="stylesheet">
+</head>
 <body ng-app="YourKidsAddressesApp">
 
-<div class="alert alert-success col-xs-12" role="alert" ng-controller="CalendarController" ng-show="anyToShow">
+<div class="alert alert-success col-xs-12" role="alert" ng-controller="CalendarController" ng-show="anyToShow()">
 <b style="float: left;">Upcoming birthdays:</b>
 <ul class="list-inline" >
 <li ng-repeat="person in nPeopleByUpcomingBirthday(3)">{{person.first}} <span ng-bind-html="person.last"></span> - 

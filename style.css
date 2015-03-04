@@ -58,7 +58,7 @@ padding: .5em;
 width: 80vw; 
 float: none;
 display: block;
-margin: 20px auto;
+margin: 0 auto 20px;
  text-align: center;
 }
 img.h {
