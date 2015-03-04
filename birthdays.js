@@ -1,6 +1,7 @@
 
   var people = [
-    {"first": "Alex"
+    {"id": "AlexWheeler"
+     ,"first": "Alex"
       ,"last": "Wheeler"
       ,"owner": true
      ,"address": {
@@ -13,7 +14,8 @@
       ,"birthday": {"monthnum": 7, "daynum": 4, "year": 1985}
      }
 
-    ,{"first": "Jack"
+    ,{"id": "JackWheeler"
+      ,"first": "Jack"
       ,"last": "Wheeler"
       ,"owner": true
       ,"phone": "503-329-5257"
@@ -26,14 +28,16 @@
       }
      }
 
-    ,{"first": "Erika"
+    ,{"id": "ErikaKauffmanWheeler"
+      ,"first": "Erika"
       ,"last": "Kauffman Wheeler"
-      ,"spouse_of": {"first": "Jack", "last": "Wheeler"}
+      ,"spouse_of": "JackWheeler"
       ,"phone": "816-305-6271"
       ,"birthday": {"monthnum": 6, "daynum": 16, "year": 1975}
      }
 
-    ,{"first": "Sarah"
+    ,{"id": "SarahWheeler"
+      ,"first": "Sarah"
       ,"last": "Wheeler"
       ,"owner": true
       ,"address": {
@@ -47,7 +51,8 @@
       ,"birthday": {"monthnum": 8, "daynum": 28, "year": 1983}
      }
 
-    ,{"first": "Rebekah"
+    ,{"id": "RebekahWheeler"
+      ,"first": "Rebekah"
       ,"last": "Wheeler"
       ,"owner": true
       ,"address": {
@@ -60,7 +65,8 @@
       ,"birthday": {"monthnum": 11, "daynum": 3, "year": 1981}
      }
 
-    ,{"first": "Jonathan"
+    ,{"id": "JonathanErickson"
+      ,"first": "Jonathan"
       ,"last": "Erickson"
       ,"owner": true
       ,"address": {
@@ -73,13 +79,15 @@
       ,"birthday": {"monthnum": 8, "daynum": 7, "year": 1980}
      }
 
-    ,{"first": "Alejandra"
+    ,{"id": "AlejandraVelez"
+      ,"first": "Alejandra"
       ,"last": "Velez"
-      ,"spouse_of": {"first": "Jonathan", "last": "Erickson"}
+      ,"spouse_of": "JonathanErickson"
       ,"birthday": {"monthnum": 10, "daynum": 13, "year": 1980}
      }
 
-    ,{"first": "Ben"
+    ,{"id": "BenWheeler"
+      ,"first": "Ben"
       ,"last": "Wheeler"
       ,"owner": true
       ,"address": {
@@ -92,17 +100,22 @@
       ,"birthday": {"monthnum": 7, "daynum": 31, "year": 1979}
      }
 
-    ,{"first": "Carmen"
+    ,{"id": "CarmenWheeler"
+      ,"first": "Carmen"
       ,"last": "Wheeler"
+      ,"child_of": "BenWheeler"
       ,"birthday": {"monthnum": 6, "daynum": 3, "year": 2009}
      }
 
-    ,{"first": "Nina"
+    ,{"id": "NinaWheeler"
+      ,"first": "Nina"
       ,"last": "Wheeler"
+      ,"child_of": "BenWheeler"
       ,"birthday": {"monthnum": 8, "daynum": 19, "year": 2011}
      }
 
-    ,{"first": "Jennifer"
+    ,{"id": "JenniferJaff&eacute;"
+      ,"first": "Jennifer"
       ,"last": "Jaff&eacute;"
       ,"owner": true
       ,"address": {
@@ -115,17 +128,22 @@
       ,"birthday": {"monthnum": 4, "daynum": 18, "year": 1972}
      }
 
-    ,{"first": "Toby"
+    ,{"id": "TobyJaff&eacute;"
+      ,"first": "Toby"
       ,"last": "Jaff&eacute;"
+      ,"child_of": "JenniferJaff&eacute;"
       ,"birthday": {"monthnum": 5, "daynum": 10, "year": 2009}
      }
 
-    ,{"first": "Sam"
+    ,{"id": "SamJaff&eacute;"
+      ,"first": "Sam"
       ,"last": "Jaff&eacute;"
+      ,"child_of": "JenniferJaff&eacute;"
       ,"birthday": {"monthnum": 9, "daynum": 26, "year": 2012}
      }
 
-    ,{"first": "Mariam"
+    ,{"id": "MariamGates"
+      ,"first": "Mariam"
       ,"last": "Gates"
       ,"owner": true
       ,"address": {
@@ -138,17 +156,22 @@
       ,"birthday": {"monthnum": 10, "daynum": 10, "year": 1971}
      }
 
-    ,{"first": "Jasmine"
+    ,{"id": "JasmineGates"
+      ,"first": "Jasmine"
       ,"last": "Gates"
+      ,"child_of": "MariamGates"
       ,"birthday": {"monthnum": 5, "daynum": 11, "year": 2003}
      }
 
-    ,{"first": "Dylan"
+    ,{"id": "DylanGates"
+      ,"first": "Dylan"
       ,"last": "Gates"
+      ,"child_of": "MariamGates"
       ,"birthday": {"monthnum": 5, "daynum": 19, "year": 2006}
      }
 
-    ,{"first": "Elizabeth"
+    ,{"id": "ElizabethZackheim"
+      ,"first": "Elizabeth"
       ,"last": "Zackheim"
       ,"owner": true
       ,"address": {
@@ -161,7 +184,8 @@
       ,"birthday": {"monthnum": 9, "daynum": 1, "year": 1969}
      }
 
-    ,{"first": "Gordon"
+    ,{"id": "GordonWheeler"
+      ,"first": "Gordon"
       ,"last": "Wheeler"
       ,"owner": true
       ,"address": {
@@ -174,45 +198,52 @@
       ,"birthday": {"monthnum": 4, "daynum": 10, "year": 1944}
      }
 
-    ,{"first": "Jon"
+    ,{"id": "JonKorn"
+      ,"first": "Jon"
       ,"last": "Korn"
-      ,"spouse_of": {"first": "Sarah", "last": "Wheeler"}
+      ,"spouse_of": "SarahWheeler"
       ,"birthday": {"monthnum": 8, "daynum": 20, "year": 1980}
      }
 
-    ,{"first": "Ben"
+    ,{"id": "BenG"
+      ,"first": "Ben"
       ,"last": "G"
-      ,"spouse_of": {"first": "Rebekah", "last": "Wheeler"}
+      ,"spouse_of": "RebekahWheeler"
       ,"birthday": {"monthnum": 1, "daynum": 2, "year": 1980}
      }
 
-    ,{"first": "Kate"
+    ,{"id": "KateCortesi"
+      ,"first": "Kate"
       ,"last": "Cortesi"
-      ,"spouse_of": {"first": "Ben", "last": "Wheeler"}
+      ,"spouse_of": "BenWheeler"
       ,"birthday": {"monthnum": 2, "daynum": 2, "year": 1979}
      }
 
-    ,{"first": "Hugo"
+    ,{"id": "HugoJaff&eacute;"
+      ,"first": "Hugo"
       ,"last": "Jaff&eacute;"
-      ,"spouse_of": {"first": "Jennifer", "last": "Jaff&eacute;"}
+      ,"spouse_of": "JenniferJaff&eacute;"
       ,"birthday": {"monthnum": 11, "daynum": 19, "year": 1972}
      }
 
-    ,{"first": "Rolf"
+    ,{"id": "RolfGates"
+      ,"first": "Rolf"
       ,"last": "Gates"
-      ,"spouse_of": {"first": "Mariam", "last": "Wheeler"}
+      ,"spouse_of": "MariamGates"
       ,"birthday": {"monthnum": 2, "daynum": 3, "year": 1966}
      }
 
-    ,{"first": "Adrian"
+    ,{"id": "AdrianZackheim"
+      ,"first": "Adrian"
       ,"last": "Zackheim"
-      ,"spouse_of": {"first": "Elizabeth", "last": "Zackheim"}
+      ,"spouse_of": "ElizabethZackheim"
       ,"birthday": {"monthnum": 9, "daynum": 19, "year": 1962}
      }
 
-    ,{"first": "Nancy"
+    ,{"id": "NancyLunney-Wheeler"
+      ,"first": "Nancy"
       ,"last": "Lunney-Wheeler"
-      ,"spouse_of": {"first": "Gordon", "last": "Wheeler"}
+      ,"spouse_of": "GordonWheeler"
       ,"birthday": {"monthnum": 6, "daynum": 25, "year": 1943}
      }
   ];
@@ -326,6 +357,12 @@ app.controller('AddressController', ['$scope', function($scope) {
   }
   $scope.googleMapsURL = googleMapsURL;
 
+  function flickrURL(person) {
+    var url = "http://www.flickr.com/photos/90204134@N00/tags/" + person.first.toLowerCase() + "/";
+    return url;
+  }
+  $scope.flickrURL = flickrURL;
+
   function needsClearfixForPeriod(index, period) {
     return (index % period === 0);
   }
@@ -336,7 +373,7 @@ app.controller('AddressController', ['$scope', function($scope) {
   };
 
   function findSpouse(person) {
-    var spouse = _.find(people, function(candidate) { return candidate.hasOwnProperty('spouse_of') && candidate.spouse_of.first === person.first && candidate.spouse_of.last === person.last });
+    var spouse = _.find(people, function(candidate) { return candidate.hasOwnProperty('spouse_of') && candidate.spouse_of === person.id; });
     return spouse;
   }
   function spouseStr(person) {
@@ -349,5 +386,19 @@ app.controller('AddressController', ['$scope', function($scope) {
     return str;
   }
   $scope.spouseStr = spouseStr;
+
+  $scope.children = {};
+  function findChildren(person) {
+    var children = _.filter(people, function(candidate) { return candidate.hasOwnProperty('child_of') && candidate.child_of === person.id; });
+    $scope.children[person.id] = children;
+    return children;
+  }
+  $scope.childrenOf = function(person) {
+    if ($scope.children.hasOwnProperty(person.id)) {
+      return $scope.children[person.id];
+    } else {
+      return findChildren(person);
+      }
+};
 }]);
 

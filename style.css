@@ -37,6 +37,10 @@ blockquote {
     border-left: none;
 font-size: 1em;
 }
+div.panel-body hr {
+  border-top-color: #ccc;
+margin-bottom: 10px;
+}
 
 .address {
 // height: 18em;
