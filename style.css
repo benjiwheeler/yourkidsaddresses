@@ -11,7 +11,12 @@
 background-image: url("skulls.png");
  }
   td { font-family: verdana; font-size: small; }
-  h1 { margin: 15px; text-align: center; 
+
+  h1 { 
+padding-top: 80px; 
+padding-bottom: 5px; 
+
+text-align: center; 
 font-family: Littledays, Trebuchent,
 Georgia, Times;
   font-size: 4em; 
@@ -31,10 +36,12 @@ img {
 border: 2px solid #59a;
 }
 img.h {
-width: 30vw; 
+ width: 100%; 
+ max-width: 400px;
 }
 img.v {
-width: 20vw; 
+ width: 70%; 
+ max-width: 300px;
 }
 #images {
 position: relative;
@@ -42,31 +49,16 @@ margin: 20px auto;
  text-align: center;
 }
 .imgwithcaption {
-width: 30vw; 
+/* width: 100%; 
 position: relative;
 float: left;
  text-align: center;
+*/
 }
 p.caption {
 margin-top: 1em;
+margin-bottom: 2em;
 background-color: rgba(200,200,255,0.2);
 padding: .5em;
-}
-
-@media only screen and (max-width: 700px) {
-.imgwithcaption {
-width: 80vw; 
-float: none;
-display: block;
-margin: 0 auto 20px;
- text-align: center;
-}
-img.h {
-width: 80vw; 
-}
-img.v {
-width: 80vw; 
-}
-
 }
 
