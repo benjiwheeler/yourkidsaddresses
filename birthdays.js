@@ -4,12 +4,12 @@
      ,"first": "Alex"
       ,"last": "Wheeler"
       ,"owner": true
-     ,"address": {
-       "street1": "28 Raymond St."
+     ,"address": [{
+       "street": ["28 Raymond St."]
        ,"city": "Allston"
        ,"state": "MA"
        ,"zip": "02134"
-     }
+     }]
      ,"phone": "(617) 686-4896"
       ,"birthday": {"monthnum": 7, "daynum": 4, "year": 1985}
      }
@@ -20,12 +20,12 @@
       ,"owner": true
       ,"phone": "503-329-5257"
       ,"birthday": {"monthnum": 5, "daynum": 27, "year": 1975}
-      ,"address": {
-	"street1": "1234 Romany Rd"
+      ,"address": [{
+	"street": ["1234 Romany Rd"]
 	,"city": "Kansas City"
 	,"state": "MO"
 	,"zip": "64113"
-      }
+      }]
      }
 
     ,{"id": "ErikaKauffmanWheeler"
@@ -40,13 +40,13 @@
       ,"first": "Sarah"
       ,"last": "Wheeler"
       ,"owner": true
-      ,"address": {
-	"street1": "487 43rd Street #1"
+      ,"address": [{
+	"street": ["487 43rd Street #1"]
 	,"city": "Oakland"
 	,"state": "CA"
 	,"zip": "94609"
 
-      }
+      }]
       ,"phone": "(909) 456-9096"
       ,"birthday": {"monthnum": 8, "daynum": 28, "year": 1983}
      }
@@ -55,12 +55,12 @@
       ,"first": "Rebekah"
       ,"last": "Wheeler"
       ,"owner": true
-      ,"address": {
-	"street1": "60 Winfield Street"
+      ,"address": [{
+	"street": ["60 Winfield Street"]
 	,"city": "San Francisco"
 	,"state": "CA"
 	,"zip": "94110"
-      }
+      }]
       ,"phone": "(617) 959-9798"
       ,"birthday": {"monthnum": 11, "daynum": 3, "year": 1981}
      }
@@ -69,12 +69,12 @@
       ,"first": "Jonathan"
       ,"last": "Erickson"
       ,"owner": true
-      ,"address": {
-	"street1": "940 Via Camino #5"
+      ,"address": [{
+	"street": ["940 Via Camino #5"]
 	,"city": "Wilmington"
 	,"state": "CA"
 	,"zip": "90744"
-      }
+      }]
       ,"phone": "(310) 350-7514"
       ,"birthday": {"monthnum": 8, "daynum": 7, "year": 1980}
      }
@@ -90,12 +90,22 @@
       ,"first": "Ben"
       ,"last": "Wheeler"
       ,"owner": true
-      ,"address": {
-	"street1": "483 Putnam Ave., Garden Entrance"
+      ,"address": [{
+        "description": "Home", 
+	"street": ["483 Putnam Ave."]
 	,"city": "Brooklyn"
 	,"state": "NY"
 	,"zip": "11221"
       }
+      ,{
+        "description": "Work", 
+	"street": ["c/o GreenDesk"
+	  ,"68 Jay St. Suite 201"
+	  ,"South Annex 16"]
+	,"city": "Brooklyn"
+	,"state": "NY"
+	,"zip": "11201"
+      }]
       ,"phone": "(917) 254-1578, (646) 651-2046"
       ,"birthday": {"monthnum": 7, "daynum": 31, "year": 1979}
      }
@@ -118,12 +128,12 @@
       ,"first": "Jennifer"
       ,"last": "Jaff&eacute;"
       ,"owner": true
-      ,"address": {
-	"street1": "1503 Escalona Drive"
+      ,"address": [{
+	"street": ["1503 Escalona Drive"]
 	,"city": "Santa Cruz"
 	,"state": "CA"
 	,"zip": "95060"
-      }
+      }]
       ,"phone": "(831) 466-0974 (home), (917) 859-4667 (cell)"
       ,"birthday": {"monthnum": 4, "daynum": 18, "year": 1972}
      }
@@ -146,12 +156,12 @@
       ,"first": "Mariam"
       ,"last": "Gates"
       ,"owner": true
-      ,"address": {
-	"street1": "122 Echo St"
+      ,"address": [{
+	"street": ["122 Echo St"]
 	,"city": "Santa Cruz"
 	,"state": "CA"
 	,"zip": "95060"
-      }
+      }]
       ,"phone": "(617) 271-7106, (831) 454-8895"
       ,"birthday": {"monthnum": 10, "daynum": 10, "year": 1971}
      }
@@ -174,12 +184,12 @@
       ,"first": "Elizabeth"
       ,"last": "Zackheim"
       ,"owner": true
-      ,"address": {
-	"street1": "185 West End Avenue, Apt 26H"
+      ,"address": [{
+	"street": ["185 West End Avenue, Apt 26H"]
 	,"city": "New York"
 	,"state": "NY"
 	,"zip": "10023"
-      }
+      }]
       ,"phone": "(917) 407-1342, (212) 366-2659"
       ,"birthday": {"monthnum": 9, "daynum": 1, "year": 1969}
      }
@@ -188,12 +198,12 @@
       ,"first": "Gordon"
       ,"last": "Wheeler"
       ,"owner": true
-      ,"address": {
-	"street1": "127 Abby Ct."
+      ,"address": [{
+	"street": ["127 Abby Ct."]
 	,"city": "Santa Cruz"
 	,"state": "CA"
 	,"zip": "95062-1425"
-      }
+      }]
       ,"phone": "(831) 426-6099 (home)"
       ,"birthday": {"monthnum": 4, "daynum": 10, "year": 1944}
      }
@@ -247,6 +257,7 @@
       ,"birthday": {"monthnum": 6, "daynum": 25, "year": 1943}
      }
   ];
+
 
 
 
@@ -339,18 +350,21 @@ app.controller('CalendarController', ['$scope', function($scope) {
   };
 }]);
 
-function enoughAddressInfoForGoogle(person) {
-  return (person.hasOwnProperty('address') && person.address.hasOwnProperty('street1') && person.address.hasOwnProperty('city') && person.address.hasOwnProperty('state') && person.address.hasOwnProperty('zip'));
+function enoughAddressInfoForGoogle(address) {
+  return (address.hasOwnProperty('street') && address.hasOwnProperty('city') && address.hasOwnProperty('state') && address.hasOwnProperty('zip'));
 } 
 
 app.controller('AddressController', ['$scope', function($scope) {
   $scope.birthdayFmt = birthdayFmt;
   $scope.people = people;
-  function googleMapsURL(person) {
+  function streetStr(streetArr, joinStr) {
+    return streetArr.join(joinStr);
+  }
+  function googleMapsURL(address) {
     var url = "#"; 
-    if (enoughAddressInfoForGoogle(person)) {
-      var street2Str = person.address['street2'] ? person.address['street2'] : "";
-      var addressStr = encodeURIComponent(person.address.street1 + " " + person.address.city + " " + person.address.state + " " + person.address.zip);
+    if (enoughAddressInfoForGoogle(address)) {
+      var joinedStreetStr = streetStr(address.street, " ");
+      var addressStr = encodeURIComponent(joinedStreetStr + address.city + " " + address.state + " " + address.zip);
       url = "http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=" + addressStr + "&ie=UTF8&z=16&iwloc=addr&om=1";
     }
     return url;

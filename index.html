@@ -113,10 +113,11 @@ Our scientists have proven it impossible to
 	    <p ng-repeat="child in children | orderBy:age:true">
 	      <a href="{{flickrURL(child)}}">{{child.first}}</a> <span ng-bind-html="child.last"></span> (b. {{birthdayFmt(child, 'MMM D')}})</p>
 	    <hr></span>
-	  <blockquote>{{person.phone}}<br>{{person.address.street1}}
-	    <span ng-if="person.address.street2"><br>{{person.address.street2}}></span>
-	    <br>{{person.address.city}}, {{person.address.state}} {{person.address.zip}}
-	    <br>[ <a href="{{googleMapsURL(person)}}">Google map</a> ]
+	  <blockquote ng-repeat="address in person.address">
+            {{person.phone}}
+	    <span ng-repeat="streetLine in address.street"><br>{{streetLine}}</span>
+	    <br>{{address.city}}, {{address.state}} {{address.zip}}
+	    <br>[ <a href="{{googleMapsURL(address)}}">Google map</a> ]
 	  </blockquote>
 	</div>
       </div>
