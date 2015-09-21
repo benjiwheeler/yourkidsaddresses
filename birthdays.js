@@ -56,10 +56,10 @@
       ,"last": "Wheeler"
       ,"owner": true
       ,"address": [{
-	"street": ["60 Winfield Street"]
-	,"city": "San Francisco"
+	"street": ["4210 Robinia Place"]
+	,"city": "Davis"
 	,"state": "CA"
-	,"zip": "94110"
+	,"zip": "95618"
       }]
       ,"phone": "(617) 959-9798"
       ,"birthday": {"monthnum": 11, "daynum": 3, "year": 1981}
