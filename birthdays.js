@@ -129,7 +129,7 @@
       ,"last": "Jaff&eacute;"
       ,"owner": true
       ,"address": [{
-	"street": ["1503 Escalona Drive"]
+	"street": ["260 Moore Street"]
 	,"city": "Santa Cruz"
 	,"state": "CA"
 	,"zip": "95060"
