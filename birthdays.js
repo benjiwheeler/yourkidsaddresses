@@ -5,10 +5,10 @@
       ,"last": "Wheeler"
       ,"owner": true
      ,"address": [{
-       "street": ["28 Raymond St."]
-       ,"city": "Allston"
+       "street": ["66 Orchard St."]
+       ,"city": "Cambridge"
        ,"state": "MA"
-       ,"zip": "02134"
+       ,"zip": "02140"
      }]
      ,"phone": "(617) 686-4896"
       ,"birthday": {"monthnum": 7, "daynum": 4, "year": 1985}
@@ -70,10 +70,10 @@
       ,"last": "Erickson"
       ,"owner": true
       ,"address": [{
-	"street": ["940 Via Camino #5"]
-	,"city": "Wilmington"
+	"street": ["681 Milford St."]
+	,"city": "Los Angeles"
 	,"state": "CA"
-	,"zip": "90744"
+	,"zip": "90042"
       }]
       ,"phone": "(310) 350-7514"
       ,"birthday": {"monthnum": 8, "daynum": 7, "year": 1980}
@@ -91,14 +91,14 @@
       ,"last": "Wheeler"
       ,"owner": true
       ,"address": [{
-        "description": "Home", 
+        "description": "Home",
 	"street": ["483 Putnam Ave."]
 	,"city": "Brooklyn"
 	,"state": "NY"
 	,"zip": "11221"
       }
       ,{
-        "description": "Work", 
+        "description": "Work",
 	"street": ["c/o GreenDesk"
 	  ,"68 Jay St. Suite 201"
 	  ,"South Annex 16"]
@@ -271,7 +271,7 @@ var birthdayDateWithoutYear = function(person) {
   return birthDate;
 };
 var dateBorn = function(person) {
-  return new Date(person.birthday.year, person.birthday.monthnum - 1, person.birthday.daynum);  
+  return new Date(person.birthday.year, person.birthday.monthnum - 1, person.birthday.daynum);
 };
 
 var today = new Date();
@@ -336,7 +336,7 @@ app.controller('CalendarController', ['$scope', function($scope) {
   $scope.birthdayFmt = birthdayFmt;
 
   function updatePeople(peopleArr) {
-    peopleByUpcomingBirthday = angular.copy(peopleArr);//people.slice(0); 
+    peopleByUpcomingBirthday = angular.copy(peopleArr);//people.slice(0);
     peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
   }
   updatePeople(people);
@@ -345,14 +345,14 @@ app.controller('CalendarController', ['$scope', function($scope) {
     return peopleByUpcomingBirthday.slice(0, numPeople);
     //return people;
   };
-  $scope.anyToShow = function() { 
-    return (peopleByUpcomingBirthday.length > 0); 
+  $scope.anyToShow = function() {
+    return (peopleByUpcomingBirthday.length > 0);
   };
 }]);
 
 function enoughAddressInfoForGoogle(address) {
   return (address.hasOwnProperty('street') && address.hasOwnProperty('city') && address.hasOwnProperty('state') && address.hasOwnProperty('zip'));
-} 
+}
 
 app.controller('AddressController', ['$scope', function($scope) {
   $scope.birthdayFmt = birthdayFmt;
@@ -361,7 +361,7 @@ app.controller('AddressController', ['$scope', function($scope) {
     return streetArr.join(joinStr);
   }
   function googleMapsURL(address) {
-    var url = "#"; 
+    var url = "#";
     if (enoughAddressInfoForGoogle(address)) {
       var joinedStreetStr = streetStr(address.street, " ");
       var addressStr = encodeURIComponent(joinedStreetStr + address.city + " " + address.state + " " + address.zip);
