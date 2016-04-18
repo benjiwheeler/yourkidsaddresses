@@ -185,10 +185,10 @@
       ,"last": "Zackheim"
       ,"owner": true
       ,"address": [{
-	"street": ["185 West End Avenue, Apt 26H"]
+	"street": ["16 W 16th street #10NS"]
 	,"city": "New York"
 	,"state": "NY"
-	,"zip": "10023"
+	,"zip": "10011"
       }]
       ,"phone": "(917) 407-1342, (212) 366-2659"
       ,"birthday": {"monthnum": 9, "daynum": 1, "year": 1969}
