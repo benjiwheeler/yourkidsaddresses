@@ -198,10 +198,10 @@
       ,"last": "Wheeler"
       ,"owner": true
       ,"address": [{
-	"street": ["127 Abby Ct."]
+	"street": ["302 Moore St"]
 	,"city": "Santa Cruz"
 	,"state": "CA"
-	,"zip": "95062-1425"
+	,"zip": "95060"
       }]
       ,"phone": "(831) 426-6099 (home)"
       ,"birthday": {"monthnum": 4, "daynum": 10, "year": 1944}
