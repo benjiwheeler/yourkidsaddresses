@@ -31,27 +31,27 @@
 </head>
 <body ng-app="YourKidsAddressesApp">
 
-<div class="banner bg-success" ng-controller="CalendarController" ng-show="anyToShow()">
+<div class="banner bg-success" ng-controller="CalendarController" ng-show="anyToShow()" ng-cloak>
 <b style="float: left;">Upcoming birthdays:</b>
 <ul class="list-inline" >
-<li ng-repeat="person in nPeopleByUpcomingBirthday(3)">{{person.first}} <span ng-bind-html="person.last"></span> - 
+<li ng-repeat="person in nPeopleByUpcomingBirthday(3)">{{person.first}} <span ng-bind-html="person.last"></span> -
 {{birthdayFmt(person, "MMM D")}}
 </li>
 </ul>
 </div>
 
-<!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - 
+<!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} -
 -->
 
 
 </div>
 
 
-<!-- <p>Hippie dad picture: "One day I will have a lot of kids, and 
+<!-- <p>Hippie dad picture: "One day I will have a lot of kids, and
 write their addresses down in...
 whoah wait, is that Camus and Jane Fonda smoking a reefer? Hi guys!
 
-<p>Dad and Dylan picture: Why you might not want Dad taking care of your 
+<p>Dad and Dylan picture: Why you might not want Dad taking care of your
 kids.
  -->
 
@@ -65,7 +65,7 @@ kids.
 <img src="danger.jpg"
  class="h">
 <div class="panel panel-default caption">
-Calling to find out kids' addresses while 
+Calling to find out kids' addresses while
 letting baby
  drive is a leading cause of
  car accidents
@@ -76,7 +76,7 @@ letting baby
 <div class="imgwithcaption col-xs-12 col-md-4 col-sm-4 col-lg-4">
 <img src="lookout.jpg"  class="v">
 <div class="panel panel-default caption">
-Grandfather photographed at moment he 
+Grandfather photographed at moment he
 begins to plan to
  forget child's address. Also, child cruelly led to believe that he is
  navigating tricycle
@@ -94,7 +94,7 @@ Our scientists have proven it impossible to
 
 </div>
 
-<div ng-controller="AddressController">
+<div ng-controller="AddressController" ng-cloak>
 
   <div ng-repeat="person in people | isAddressOwner | orderBy:age">
     <!-- This will clear the float in Small Size screens only -->
@@ -130,14 +130,14 @@ Our scientists have proven it impossible to
 <div class="clearfix">&nbsp;</div>
 
 
-<div class="col-xs-12 col-sm-6" ng-controller="BirthdayController">
+<div class="col-xs-12 col-sm-6" ng-controller="BirthdayController" ng-cloak>
 <h1>Birthdays</h1>
 <div style="width: 90%; position: relative; margin-left: 10%">
 <div style="margin: 0 auto; position: relative; width: 90%; max-width: 400px">
 <ul style="list-style-type: none; margin-left: 20%; padding: 0">
-<li ng-repeat="person in people | orderBy:birthdayDateWithoutYear">{{person.first}} <span ng-bind-html="person.last"></span> - 
-<span ng-bind-html="birthdayFmt(person, 'MMM D')"></span></li> 
-<!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - {{birthdayFmt(person, "MMM d")}}</li> 
+<li ng-repeat="person in people | orderBy:birthdayDateWithoutYear">{{person.first}} <span ng-bind-html="person.last"></span> -
+<span ng-bind-html="birthdayFmt(person, 'MMM D')"></span></li>
+<!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - {{birthdayFmt(person, "MMM d")}}</li>
 -->
 </ul>
 </div>
@@ -148,12 +148,12 @@ Our scientists have proven it impossible to
 <div class="col-xs-12 col-sm-5 col-sm-offset-1">
 <h1>Other useful info</h1>
 
-<a href="https://www.youtube.com/watch?v=GZQe_dysK5U">How to reenable a Google Calendar</a> that you have been invited to in the 
-past, 
-but which 
-you have somehow lost track of, and 
-are 
-too 
+<a href="https://www.youtube.com/watch?v=GZQe_dysK5U">How to reenable a Google Calendar</a> that you have been invited to in the
+past,
+but which
+you have somehow lost track of, and
+are
+too
 embarrassed to ask your grandchildren to help you find
 </div>
 <div class="col-xs-0 col-sm-4 col-sm-12 col-lg-4">&nbsp;</div>
