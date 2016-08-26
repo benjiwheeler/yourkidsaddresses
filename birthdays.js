@@ -167,7 +167,10 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
   };
 
   function findSpouse(person) {
-    var spouse = _.find(people, function(candidate) { return candidate.hasOwnProperty('spouse_of') && candidate.spouse_of === person.id; });
+    var spouse = _.find($scope.people, function(candidate) {
+      return candidate.hasOwnProperty('spouse_of') &&
+      (candidate.spouse_of === person.id);
+    });
     return spouse;
   }
   function spouseStr(person) {
@@ -183,7 +186,7 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
 
   $scope.children = {};
   function findChildren(person) {
-    var children = _.filter(people, function(candidate) { return candidate.hasOwnProperty('child_of') && candidate.child_of === person.id; });
+    var children = _.filter($scope.people, function(candidate) { return candidate.hasOwnProperty('child_of') && candidate.child_of === person.id; });
     $scope.children[person.id] = children;
     return children;
   }

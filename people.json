@@ -50,6 +50,14 @@
       ,"birthday": {"monthnum": 8, "daynum": 28, "year": 1983}
      }
 
+    ,{"id": "MaxKorn"
+      ,"first": "Max"
+      ,"last": "Korn"
+      ,"child_of": "SarahWheeler"
+      ,"birthday": {"monthnum": 1, "daynum": 19, "year": 2016}
+     }
+
+
     ,{"id": "RebekahWheeler"
       ,"first": "Rebekah"
       ,"last": "Wheeler"
@@ -62,6 +70,13 @@
       }]
       ,"phone": "(617) 959-9798"
       ,"birthday": {"monthnum": 11, "daynum": 3, "year": 1981}
+     }
+
+    ,{"id": "BenGoldbergJr"
+      ,"first": "Ben"
+      ,"last": "Goldberg Jr."
+      ,"child_of": "RebekahWheeler"
+      ,"birthday": {"monthnum": 7, "daynum": 22, "year": 2016}
      }
 
     ,{"id": "JonathanErickson"
