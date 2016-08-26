@@ -152,8 +152,7 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
   $scope.googleMapsURL = googleMapsURL;
 
   function flickrURL(person) {
-    var url = "http://www.flickr.com/photos/90204134@N00/tags/" + person.first.toLowerCase() + "/";
-    return url;
+    return person.photos;
   }
   $scope.flickrURL = flickrURL;
 
