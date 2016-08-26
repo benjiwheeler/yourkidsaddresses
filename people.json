@@ -1,7 +1,7 @@
  [
     {"id": "BenG"
       ,"first": "Ben"
-      ,"last": "G"
+      ,"last": "G."
       ,"spouse_of": "RebekahWheeler"
       ,"birthday": {"monthnum": 1, "daynum": 2, "year": 1980}
      }
@@ -11,10 +11,10 @@
       ,"last": "Wheeler"
       ,"owner": true
       ,"address": [{
-  "street": ["4210 Robinia Place"]
-  ,"city": "Davis"
+  "street": ["2020 Brown St."]
+  ,"city": "Napa"
   ,"state": "CA"
-  ,"zip": "95618"
+  ,"zip": "94559"
       }]
       ,"phone": "(617) 959-9798"
       ,"birthday": {"monthnum": 11, "daynum": 3, "year": 1981}
