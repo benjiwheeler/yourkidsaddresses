@@ -64,9 +64,14 @@ var app = angular.module('YourKidsAddressesApp', [
 
 app.filter('isAddressOwner', function () {
   return function (people) {
-    return people.filter(function (person) {
-      return (person.hasOwnProperty('owner') && person.owner === true);
-    });
+    if (people) {
+      return people.filter(function (person) {
+        return (person.hasOwnProperty('owner') && person.owner === true);
+      });
+    } else {
+      console.warn("variable 'people' not present");
+      return null;
+    }
   };
 });
 
