@@ -110,15 +110,15 @@ Our scientists have proven it impossible to
 	<div class="panel-heading">{{person.first}} <span ng-bind-html="person.last"></span> (b. {{birthdayFmt(person, 'MMM D')}})<span ng-bind-html="spouseStr(person)"></span></div>
 	<div class="panel-body">
 	  <span ng-if="children = childrenOf(person)">
-	    <p ng-repeat="child in children | orderBy:age:true">
+	    <div ng-repeat="child in children | orderBy:age:true">
         <span ng-if="child.photos">
           <a href="{{flickrURL(child)}}">{{child.first}}</a>
         </span>
         <span ng-if="!child.photos">{{child.first}}</span>
         <span ng-bind-html="child.last"></span>
         (b. {{birthdayFmt(child, 'MMM D')}})
-        <span ng-bind-html="child.additional_info" style=""></span>
-      </p>
+        <p ng-bind-html="child.additional_info" style=""></p>
+      </div>
 	    <hr>
     </span>
 	  <blockquote ng-repeat="address in person.address">
