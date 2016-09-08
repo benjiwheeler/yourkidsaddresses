@@ -116,8 +116,9 @@ Our scientists have proven it impossible to
         </span>
         <span ng-if="!child.photos">{{child.first}}</span>
          <span ng-bind-html="child.last"></span> (b. {{birthdayFmt(child, 'MMM D')}})</p>
-      <h1 ng-init="get_additional_info(child)"></h1>
-      <span ng-if="child.additional_info"><span ng-bind-html="child.additional_info"></span></span>
+      <span ng-if="child.additional_info">
+              <h1 ng-init="get_additional_info(child)"></h1>
+<span ng-bind-html="child.additional_info"></span></span>
 	    <hr></span>
 	  <blockquote ng-repeat="address in person.address">
             {{person.phone}}
