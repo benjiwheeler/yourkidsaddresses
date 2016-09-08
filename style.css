@@ -34,8 +34,8 @@ color: #474;
 }
 
 .banner > ul.list-inline > li {
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: .75em;
+  padding-right: .25em;
 }
 
 /* Override the bootstrap style */
