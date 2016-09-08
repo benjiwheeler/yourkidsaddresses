@@ -124,7 +124,7 @@ Our scientists have proven it impossible to
 	    <br>{{address.city}}, {{address.state}} {{address.zip}}
 	    <br>[ <a href="{{googleMapsURL(address)}}">Google map</a> ]
 	  </blockquote>
-      <h1 ng-init="person.get_additional_info(person)"></h1>
+      <h1 ng-init="get_additional_info(person)"></h1>
       <span ng-if="person.additional_info"><hr><span ng-bind-html="person.additional_info"></span></span>
 	</div>
       </div>
