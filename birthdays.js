@@ -157,7 +157,7 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
   $scope.googleMapsURL = googleMapsURL;
 
   function get_additional_info(person) {
-    return true;
+    return "t2e2s1";
     //person.additional_info;
   }
   $scope.get_additional_info = get_additional_info;
