@@ -156,11 +156,10 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
   }
   $scope.googleMapsURL = googleMapsURL;
 
-  function testfn(person) {
-    return ("t2e2s1" + person);
-    //person.additional_info;
+  function get_additional_info(person) {
+    return person.additional_info;
   }
-  $scope.testfn = testfn;
+  $scope.get_additional_info = get_additional_info;
 
   function flickrURL(person) {
     return person.photos;
