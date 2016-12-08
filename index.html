@@ -34,7 +34,7 @@
 <div class="banner bg-success" ng-controller="CalendarController" ng-show="anyToShow()" ng-cloak>
 <b style="float: left;">Upcoming birthdays:</b>
 <ul class="list-inline" >
-<li ng-repeat="person in nPeopleByUpcomingBirthday(3)">{{person.first}} <span ng-bind-html="person.last"></span> -
+<li ng-repeat="person in nPeopleByUpcomingBirthday(3)">{{person.nickname}}</span> -
 {{birthdayFmt(person, "MMM D")}}
 </li>
 </ul>
@@ -144,8 +144,7 @@ Our scientists have proven it impossible to
 <div style="width: 90%; position: relative; margin-left: 10%">
 <div style="margin: 0 auto; position: relative; width: 90%; max-width: 400px">
 <ul style="list-style-type: none; margin-left: 20%; padding: 0">
-<li ng-repeat="person in people | orderBy:birthdayDateWithoutYear">{{person.first}} <span ng-bind-ht
-ml="person.last"></span> -
+<li ng-repeat="person in people | orderBy:birthdayDateWithoutYear"><span ng-bind-html="person.nickname"></span> -
 <span ng-bind-html="birthdayFmt(person, 'MMM D')"></span></li>
 <!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - {{birthdayFmt(person, "MMM d")}}</li>
 -->
