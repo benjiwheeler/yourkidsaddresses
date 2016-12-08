@@ -110,19 +110,24 @@ Our scientists have proven it impossible to
 	<div class="panel-heading">{{person.first}} <span ng-bind-html="person.last"></span> (b. {{birthdayFmt(person, 'MMM D')}})<span ng-bind-html="spouseStr(person)"></span></div>
 	<div class="panel-body">
 	  <span ng-if="children = childrenOf(person)">
-	    <p ng-repeat="child in children | orderBy:age:true">
+	    <div ng-repeat="child in children | orderBy:age:true">
         <span ng-if="child.photos">
-        <a href="{{flickrURL(child)}}">{{child.first}}</a>
+          <a href="{{flickrURL(child)}}">{{child.first}}</a>
         </span>
         <span ng-if="!child.photos">{{child.first}}</span>
-         <span ng-bind-html="child.last"></span> (b. {{birthdayFmt(child, 'MMM D')}})</p>
-	    <hr></span>
+        <span ng-bind-html="child.last"></span>
+        (b. {{birthdayFmt(child, 'MMM D')}})
+        <p ng-bind-html="child.additional_info" style="font-size: .8em;"></p>
+      </div>
+	    <hr>
+    </span>
 	  <blockquote ng-repeat="address in person.address">
             {{person.phone}}
 	    <span ng-repeat="streetLine in address.street"><br>{{streetLine}}</span>
 	    <br>{{address.city}}, {{address.state}} {{address.zip}}
 	    <br>[ <a href="{{googleMapsURL(address)}}">Google map</a> ]
 	  </blockquote>
+      <span ng-if="person.additional_info"><hr><span ng-bind-html="person.additional_info"></span></span>
 	</div>
       </div>
     </div>
@@ -139,7 +144,8 @@ Our scientists have proven it impossible to
 <div style="width: 90%; position: relative; margin-left: 10%">
 <div style="margin: 0 auto; position: relative; width: 90%; max-width: 400px">
 <ul style="list-style-type: none; margin-left: 20%; padding: 0">
-<li ng-repeat="person in people | orderBy:birthdayDateWithoutYear">{{person.first}} <span ng-bind-html="person.last"></span> -
+<li ng-repeat="person in people | orderBy:birthdayDateWithoutYear">{{person.first}} <span ng-bind-ht
+ml="person.last"></span> -
 <span ng-bind-html="birthdayFmt(person, 'MMM D')"></span></li>
 <!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - {{birthdayFmt(person, "MMM d")}}</li>
 -->
