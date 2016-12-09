@@ -46,6 +46,21 @@
       ,"birthday": {"monthnum": 7, "daynum": 4, "year": 1985}
      }
 
+    ,{"id": "DavidZackheim"
+     ,"first": "David"
+     ,"nickname": "David"
+      ,"last": "Zackheim"
+      ,"owner": true
+     ,"address": [{
+       "street": ["55 North Water St. Apt. B304"]
+       ,"city": "South Norwalk"
+       ,"state": "CT"
+       ,"zip": "06854"
+     }]
+     ,"phone": "(617) ???-????"
+      ,"birthday": {"monthnum": 1, "daynum": 1, "year": 1900}
+     }
+
     ,{"id": "JackWheeler"
       ,"first": "Jack"
       ,"nickname": "Jack"
