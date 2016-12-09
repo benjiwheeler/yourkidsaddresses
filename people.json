@@ -48,7 +48,7 @@
 
     ,{"id": "DavidZackheim"
      ,"first": "David"
-     ,"nickname": "David"
+     ,"nickname": "David Z"
       ,"last": "Zackheim"
       ,"owner": true
      ,"address": [{
@@ -59,6 +59,21 @@
      }]
      ,"phone": "(617) ???-????"
       ,"birthday": {"monthnum": 1, "daynum": 1, "year": 1900}
+     }
+
+    ,{"id": "AlexZackheim"
+     ,"first": "Alex"
+     ,"nickname": "Alex Z"
+      ,"last": "Zackheim"
+      ,"owner": true
+     ,"address": [{
+       "street": ["805 Kodak Drive"]
+       ,"city": "Los Angeles"
+       ,"state": "CA"
+       ,"zip": "90026"
+     }]
+     ,"phone": "(203) 247-4738"
+      ,"birthday": {"monthnum": 5, "daynum": 30, "year": 1987}
      }
 
     ,{"id": "JackWheeler"
