@@ -141,6 +141,14 @@
       ,"birthday": {"monthnum": 8, "daynum": 7, "year": 1980}
      }
 
+    ,{"id": "AlexanderErickson"
+      ,"first": "Alexander"
+      ,"nickname": "Alexander"
+      ,"last": "Erickson"
+      ,"child_of": "JonathanErickson"
+      ,"birthday": {"monthnum": 10, "daynum": 1, "year": 2017}
+     }
+
     ,{"id": "AlejandraVelez"
       ,"first": "Alejandra"
       ,"nickname": "Alejandra"
