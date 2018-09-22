@@ -3,14 +3,14 @@
     ,"first": "Ben"
     ,"nickname": "Ben G"
     ,"last": "G."
-    ,"spouse_of": "RebekahWheeler"
+    ,"spouse_of": "RebekahW"
     ,"birthday": {"monthnum": 1, "daynum": 2, "year": 1980}
   }
 
-  ,{"id": "RebekahWheeler"
+  ,{"id": "RebekahW"
     ,"first": "Rebekah"
     ,"nickname": "Rebekah"
-    ,"last": "Wheeler"
+    ,"last": "W"
     ,"owner": true
     ,"address": [{
       "street": ["2020 Brown St."]
@@ -26,15 +26,15 @@
     ,"first": "Ben"
     ,"nickname": "Ben Jr"
     ,"last": "G Jr."
-    ,"child_of": "RebekahWheeler"
+    ,"child_of": "RebekahW"
     ,"birthday": {"monthnum": 7, "daynum": 22, "year": 2016}
     ,"photos": "https://goo.gl/photos/ejwgoUGDURvztgUJA"
   }
 
-  ,{"id": "AlexWheeler"
+  ,{"id": "AlexW"
     ,"first": "Alex"
     ,"nickname": "Alex W"
-    ,"last": "Wheeler"
+    ,"last": "W"
     ,"owner": true
     ,"address": [{
       "street": ["66 Orchard St."]
@@ -46,10 +46,10 @@
     ,"birthday": {"monthnum": 7, "daynum": 4, "year": 1985}
   }
 
-  ,{"id": "DavidZackheim"
+  ,{"id": "DavidZ"
    ,"first": "David"
    ,"nickname": "David Z"
-    ,"last": "Zackheim"
+    ,"last": "Z"
     ,"owner": true
    ,"address": [{
      "street": ["55 North Water St. Apt. B304"]
@@ -61,10 +61,10 @@
     ,"birthday": {"monthnum": 1, "daynum": 1, "year": 1900}
   }
 
-  ,{"id": "AlexZackheim"
+  ,{"id": "AlexZ"
    ,"first": "Alex"
    ,"nickname": "Alex Z"
-    ,"last": "Zackheim"
+    ,"last": "Z"
     ,"owner": true
    ,"address": [{
      "street": ["805 Kodak Drive"]
@@ -76,10 +76,10 @@
     ,"birthday": {"monthnum": 5, "daynum": 30, "year": 1987}
   }
 
-  ,{"id": "JackWheeler"
+  ,{"id": "JackW"
     ,"first": "Jack"
     ,"nickname": "Jack"
-    ,"last": "Wheeler"
+    ,"last": "W"
     ,"owner": true
     ,"phone": "503-329-5257"
     ,"birthday": {"monthnum": 5, "daynum": 27, "year": 1975}
@@ -91,19 +91,19 @@
      }]
   }
 
-  ,{"id": "ErikaKauffmanWheeler"
+  ,{"id": "ErikaKW"
     ,"first": "Erika"
     ,"nickname": "Erika"
-    ,"last": "Kauffman Wheeler"
-    ,"spouse_of": "JackWheeler"
+    ,"last": "K W"
+    ,"spouse_of": "JackW"
     ,"phone": "816-305-6271"
     ,"birthday": {"monthnum": 6, "daynum": 16, "year": 1975}
    }
 
-  ,{"id": "SarahWheeler"
+  ,{"id": "SarahW"
     ,"first": "Sarah"
     ,"nickname": "Sarah"
-    ,"last": "Wheeler"
+    ,"last": "W"
     ,"owner": true
     ,"address": [{
       "street": ["487 43rd Street #1"]
@@ -115,29 +115,29 @@
     ,"birthday": {"monthnum": 8, "daynum": 28, "year": 1983}
   }
 
-  ,{"id": "MaxKorn"
+  ,{"id": "MaxK"
     ,"first": "Max"
     ,"nickname": "Max"
-    ,"last": "Korn"
-    ,"child_of": "SarahWheeler"
+    ,"last": "K"
+    ,"child_of": "SarahW"
     ,"birthday": {"monthnum": 1, "daynum": 19, "year": 2016}
     ,"photos": "https://goo.gl/photos/CTMnoiV7PoqXhcw7A"
     ,"additional_info": "To donate to college fund, go to <a href=\"https://gift.uesp.org/EG2H8T\">ugift529.com</a><br>(Payment options: bank transfer or check)"
    }
 
-  ,{"id": "RamonaKorn"
+  ,{"id": "RamonaK"
     ,"first": "Ramona"
     ,"nickname": "Momo"
-    ,"last": "Korn"
-    ,"child_of": "SarahWheeler"
+    ,"last": "K"
+    ,"child_of": "SarahW"
     ,"birthday": {"monthnum": 4, "daynum": 23, "year": 2018}
     ,"photos": "https://goo.gl/photos/CTMnoiV7PoqXhcw7A"
    }
 
-  ,{"id": "JonathanErickson"
+  ,{"id": "JonathanE"
     ,"first": "Jonathan"
     ,"nickname": "Jonathan"
-    ,"last": "Erickson"
+    ,"last": "E"
     ,"owner": true
     ,"address": [{
       "street": ["2001 Morgan Lane"]
@@ -149,27 +149,27 @@
     ,"birthday": {"monthnum": 8, "daynum": 7, "year": 1980}
   }
 
-  ,{"id": "AlexanderErickson"
+  ,{"id": "AlexanderE"
     ,"first": "Alexander"
     ,"nickname": "Alexander E"
-    ,"last": "Mateo Velez Erickson"
-    ,"child_of": "JonathanErickson"
+    ,"last": "Mateo V E"
+    ,"child_of": "JonathanE"
     ,"birthday": {"monthnum": 10, "daynum": 1, "year": 2017}
     ,"additional_info": "To donate to college fund:<ol><li>go to <a href=\"http://ugift529.com\">ugift529.com</a></li><li>enter the code B3B-94X</li><li>choose a payment method (including credit card or mailing a check)</li></ol>"
   }
 
-  ,{"id": "AlejandraVelez"
+  ,{"id": "AlejandraV"
     ,"first": "Alejandra"
     ,"nickname": "Alejandra"
-    ,"last": "Velez"
-    ,"spouse_of": "JonathanErickson"
+    ,"last": "V"
+    ,"spouse_of": "JonathanE"
     ,"birthday": {"monthnum": 10, "daynum": 13, "year": 1980}
   }
 
-  ,{"id": "BenWheeler"
+  ,{"id": "BenW"
     ,"first": "Ben"
     ,"nickname": "Ben W"
-    ,"last": "Wheeler"
+    ,"last": "W"
     ,"owner": true
     ,"address": [{
       "description": "Home",
@@ -182,30 +182,30 @@
     ,"birthday": {"monthnum": 7, "daynum": 31, "year": 1979}
   }
 
-  ,{"id": "CarmenWheeler"
+  ,{"id": "CarmenW"
     ,"first": "Carmen"
     ,"nickname": "Carmen"
-    ,"last": "Wheeler"
-    ,"child_of": "BenWheeler"
+    ,"last": "W"
+    ,"child_of": "BenW"
     ,"birthday": {"monthnum": 6, "daynum": 3, "year": 2009}
     ,"photos": "https://goo.gl/photos/Hr1ESm4P88HdrYcHA"
     ,"additional_info": "To donate to college fund:<ol><li>go to <a href=\"http://ugift529.com\">ugift529.com</a></li><li>enter the code E6M-70Y</li><li>choose a payment method (including credit card or mailing a check)</li></ol><p><a href=\"https://www.amazon.com/gp/registry/wishlist/3209MK6HM8LMZ/ref=nav_wishlist_lists_1\">Amazon Wish List</a>"
   }
 
-  ,{"id": "NinaWheeler"
+  ,{"id": "NinaW"
     ,"first": "Nina"
     ,"nickname": "Nina"
-    ,"last": "Wheeler"
-    ,"child_of": "BenWheeler"
+    ,"last": "W"
+    ,"child_of": "BenW"
     ,"birthday": {"monthnum": 8, "daynum": 19, "year": 2011}
     ,"photos": "https://goo.gl/photos/Zi8azm1uF9pxY9k99"
     ,"additional_info": "To donate to college fund:<ol><li>go to <a href=\"http://ugift529.com\">ugift529.com</a></li><li>enter the code K57-J1Y</li><li>choose a payment method (including credit card or mailing a check)</li></ol><p><a href=\"https://www.amazon.com/gp/registry/wishlist/3209MK6HM8LMZ/ref=nav_wishlist_lists_1\">Amazon Wish List</a>"
   }
 
-  ,{"id": "JenniferJaff&eacute;"
+  ,{"id": "JenniferJ"
     ,"first": "Jennifer"
     ,"nickname": "Jennifer"
-    ,"last": "Jaff&eacute;"
+    ,"last": "J"
     ,"owner": true
     ,"address": [{
       "street": ["260 Moore Street"]
@@ -217,27 +217,27 @@
     ,"birthday": {"monthnum": 4, "daynum": 18, "year": 1972}
   }
 
-  ,{"id": "TobyJaff&eacute;"
+  ,{"id": "TobyJ"
     ,"first": "Toby"
     ,"nickname": "Toby"
-    ,"last": "Jaff&eacute;"
-    ,"child_of": "JenniferJaff&eacute;"
+    ,"last": "J"
+    ,"child_of": "JenniferJ"
     ,"birthday": {"monthnum": 5, "daynum": 10, "year": 2009}
     ,"photos": "https://goo.gl/photos/eQygLXu2tgh5uerv7"
   }
 
-  ,{"id": "SamJaff&eacute;"
+  ,{"id": "SamJ"
     ,"first": "Sam"
     ,"nickname": "Sam"
-    ,"last": "Jaff&eacute;"
-    ,"child_of": "JenniferJaff&eacute;"
+    ,"last": "J"
+    ,"child_of": "JenniferJ"
     ,"birthday": {"monthnum": 9, "daynum": 26, "year": 2012}
   }
 
-  ,{"id": "MariamGates"
+  ,{"id": "MariamG"
     ,"first": "Mariam"
     ,"nickname": "Mariam"
-    ,"last": "Gates"
+    ,"last": "G"
     ,"owner": true
     ,"address": [{
       "street": ["122 Echo St"]
@@ -249,28 +249,28 @@
     ,"birthday": {"monthnum": 10, "daynum": 10, "year": 1971}
   }
 
-  ,{"id": "JasmineGates"
+  ,{"id": "JasmineG"
     ,"first": "Jasmine"
     ,"nickname": "Jasmine"
-    ,"last": "Gates"
-    ,"child_of": "MariamGates"
+    ,"last": "G"
+    ,"child_of": "MariamG"
     ,"birthday": {"monthnum": 5, "daynum": 11, "year": 2003}
     ,"photos": "https://goo.gl/photos/JcUcmK8YrnKGdWfa8"
   }
 
-  ,{"id": "DylanGates"
+  ,{"id": "DylanG"
     ,"first": "Dylan"
     ,"nickname": "Dylan"
-    ,"last": "Gates"
-    ,"child_of": "MariamGates"
+    ,"last": "G"
+    ,"child_of": "MariamG"
     ,"birthday": {"monthnum": 5, "daynum": 19, "year": 2006}
     ,"photos": "https://goo.gl/photos/RFy45jaRVzFQ3j6SA"
   }
 
-  ,{"id": "ElizabethZackheim"
+  ,{"id": "ElizabethZ"
     ,"first": "Elizabeth"
     ,"nickname": "Elizabeth"
-    ,"last": "Zackheim"
+    ,"last": "Z"
     ,"owner": true
     ,"address": [{
       "street": ["16 W 16th #10NS"]
@@ -282,10 +282,10 @@
     ,"birthday": {"monthnum": 9, "daynum": 1, "year": 1969}
   }
 
-  ,{"id": "GordonWheeler"
+  ,{"id": "GordonW"
     ,"first": "Gordon"
     ,"nickname": "Gordon"
-    ,"last": "Wheeler"
+    ,"last": "W"
     ,"owner": true
     ,"address": [{
       "street": ["302 Moore St"]
@@ -297,51 +297,51 @@
     ,"birthday": {"monthnum": 4, "daynum": 10, "year": 1944}
   }
 
-  ,{"id": "JonKorn"
+  ,{"id": "JonK"
     ,"first": "Jon"
-    ,"nickname": "Jon Korn"
-    ,"last": "Korn"
-    ,"spouse_of": "SarahWheeler"
+    ,"nickname": "Jon K"
+    ,"last": "K"
+    ,"spouse_of": "SarahW"
     ,"birthday": {"monthnum": 8, "daynum": 20, "year": 1980}
   }
 
-  ,{"id": "KateCortesi"
+  ,{"id": "KateC"
     ,"first": "Kate"
     ,"nickname": "Kate"
-    ,"last": "Cortesi"
-    ,"spouse_of": "BenWheeler"
+    ,"last": "C"
+    ,"spouse_of": "BenW"
     ,"birthday": {"monthnum": 2, "daynum": 2, "year": 1979}
   }
 
-  ,{"id": "HugoJaff&eacute;"
+  ,{"id": "HugoJ"
     ,"first": "Hugo"
     ,"nickname": "Hugo"
-    ,"last": "Jaff&eacute;"
-    ,"spouse_of": "JenniferJaff&eacute;"
+    ,"last": "J"
+    ,"spouse_of": "JenniferJ"
     ,"birthday": {"monthnum": 11, "daynum": 19, "year": 1972}
   }
 
-  ,{"id": "RolfGates"
+  ,{"id": "RolfG"
     ,"first": "Rolf"
     ,"nickname": "Rolf"
-    ,"last": "Gates"
-    ,"spouse_of": "MariamGates"
+    ,"last": "G"
+    ,"spouse_of": "MariamG"
     ,"birthday": {"monthnum": 2, "daynum": 3, "year": 1966}
   }
 
-  ,{"id": "AdrianZackheim"
+  ,{"id": "AdrianZ"
     ,"first": "Adrian"
     ,"nickname": "Adrian"
-    ,"last": "Zackheim"
-    ,"spouse_of": "ElizabethZackheim"
+    ,"last": "Z"
+    ,"spouse_of": "ElizabethZ"
     ,"birthday": {"monthnum": 9, "daynum": 19, "year": 1962}
   }
 
-  ,{"id": "NancyLunney-Wheeler"
+  ,{"id": "NancyLunney-W"
     ,"first": "Nancy"
     ,"nickname": "Nancy"
-    ,"last": "Lunney-Wheeler"
-    ,"spouse_of": "GordonWheeler"
+    ,"last": "Lunney-W"
+    ,"spouse_of": "GordonW"
     ,"birthday": {"monthnum": 6, "daynum": 25, "year": 1943}
   }
 ]
