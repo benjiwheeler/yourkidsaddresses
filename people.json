@@ -52,10 +52,10 @@
       ,"last": "Z"
       ,"owner": true
    ,"address": [{
-       "street": ["55 North Water St. Apt. B304"]
-         ,"city": "South Norwalk"
-         ,"state": "CT"
-         ,"zip": "06854"
+       "street": ["332 Franklin St."]
+         ,"city": "Cambridge"
+         ,"state": "MA"
+         ,"zip": "02139"
     }]
    ,"phone": "(617) ???-????"
       ,"birthday": {"monthnum": 1, "daynum": 1, "year": 1900}
@@ -67,10 +67,10 @@
       ,"last": "Z"
       ,"owner": true
    ,"address": [{
-       "street": ["805 Kodak Drive"]
+       "street": ["1009 Marview Avenue"]
          ,"city": "Los Angeles"
          ,"state": "CA"
-         ,"zip": "90026"
+         ,"zip": "90012"
     }]
    ,"phone": "(203) 247-4738"
       ,"birthday": {"monthnum": 5, "daynum": 30, "year": 1987}
