@@ -52,12 +52,12 @@
       ,"last": "Z"
       ,"owner": true
    ,"address": [{
-       "street": ["332 Franklin St."]
+       "street": ["332 Franklin St. Apt. 201"]
          ,"city": "Cambridge"
          ,"state": "MA"
          ,"zip": "02139"
     }]
-   ,"phone": "(617) ???-????"
+   ,"phone": "(203) 247-3351"
       ,"birthday": {"monthnum": 1, "daynum": 1, "year": 1900}
   }
 
