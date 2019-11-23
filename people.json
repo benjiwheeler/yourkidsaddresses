@@ -1,13 +1,5 @@
 [
-  {"id": "BenG"
-      ,"first": "Ben"
-      ,"nickname": "Ben G"
-      ,"last": "G."
-      ,"spouse_of": "RebekahW"
-      ,"birthday": {"monthnum": 1, "daynum": 2, "year": 1980}
-  }
-
-  ,{"id": "RebekahW"
+  {"id": "RebekahW"
       ,"first": "Rebekah"
       ,"nickname": "Rebekah"
       ,"last": "W"
