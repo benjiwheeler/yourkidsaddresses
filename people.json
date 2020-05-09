@@ -1,5 +1,29 @@
 [
-  {"id": "AlexW"
+  {"id": "RebekahW"
+      ,"first": "Rebekah"
+      ,"nickname": "Rebekah"
+      ,"last": "W"
+      ,"owner": true
+      ,"address": [{
+        "street": ["5190 Newanga Ave."]
+          ,"city": "Santa Rosa"
+          ,"state": "CA"
+          ,"zip": "95405"
+    }]
+      ,"phone": "(617) 959-9798"
+      ,"birthday": {"monthnum": 11, "daynum": 3, "year": 1981}
+  }
+
+  ,{"id": "BenGJr"
+      ,"first": "Ben"
+      ,"nickname": "Ben Jr"
+      ,"last": "G Jr."
+      ,"child_of": "RebekahW"
+      ,"birthday": {"monthnum": 7, "daynum": 22, "year": 2016}
+      ,"photos": "https://goo.gl/photos/ejwgoUGDURvztgUJA"
+  }
+
+  ,{"id": "AlexW"
       ,"first": "Alex"
       ,"nickname": "Alex W"
       ,"last": "W"
@@ -213,7 +237,7 @@
           ,"state": "CA"
           ,"zip": "95060"
      }]
-      ,"phone": "(617) 271-7106, (831) 454-8895"
+      ,"phone": "(831) 334-3060"
       ,"birthday": {"monthnum": 10, "daynum": 10, "year": 1971}
   }
 
