@@ -5,10 +5,10 @@
       ,"last": "W"
       ,"owner": true
       ,"address": [{
-        "street": ["5190 Newanga Ave."]
+        "street": ["653 Wild Oak Dr."]
           ,"city": "Santa Rosa"
           ,"state": "CA"
-          ,"zip": "95405"
+          ,"zip": "95409"
     }]
       ,"phone": "(617) 959-9798"
       ,"birthday": {"monthnum": 11, "daynum": 3, "year": 1981}
@@ -270,10 +270,10 @@
       ,"last": "Z"
       ,"owner": true
       ,"address": [{
-        "street": ["16 W 16th #10NS"]
-          ,"city": "New York"
+        "street": ["96 Shaker Ridge Dr."]
+          ,"city": "Canaan"
           ,"state": "NY"
-          ,"zip": "10011"
+          ,"zip": "12029"
      }]
       ,"phone": "(917) 407-1342, (212) 366-2659"
       ,"birthday": {"monthnum": 9, "daynum": 1, "year": 1969}
