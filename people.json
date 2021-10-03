@@ -59,10 +59,10 @@
       ,"last": "Z"
       ,"owner": true
    ,"address": [{
-       "street": ["1009 Marview Avenue"]
+       "street": ["2220 Canyon Drive"]
          ,"city": "Los Angeles"
          ,"state": "CA"
-         ,"zip": "90012"
+         ,"zip": "90068"
     }]
    ,"phone": "(203) 247-4738"
       ,"birthday": {"monthnum": 5, "daynum": 30, "year": 1987}
