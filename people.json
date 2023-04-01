@@ -175,10 +175,10 @@
       ,"owner": true
       ,"address": [{
         "description": "Home",
-          "street": ["34 Sycamore St."]
+          "street": ["16 Lee St. #2"]
           ,"city": "Somerville"
           ,"state": "MA"
-          ,"zip": "02143-1225"
+          ,"zip": "02145"
      }]
       ,"phone": "(917) 254-1578, (646) 651-2046"
       ,"birthday": {"monthnum": 7, "daynum": 31, "year": 1979}
