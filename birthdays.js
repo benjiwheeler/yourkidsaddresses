@@ -156,10 +156,10 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
   }
   $scope.googleMapsURL = googleMapsURL;
 
-  function flickrURL(person) {
+  function photoURL(person) {
     return person.photos;
   }
-  $scope.flickrURL = flickrURL;
+  $scope.photoURL = photoURL;
 
   function needsClearfixForPeriod(index, period) {
     return (index % period === 0);
@@ -202,4 +202,3 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
       }
 };
 }]);
-
