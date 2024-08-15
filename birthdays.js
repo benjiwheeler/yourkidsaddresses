@@ -29,6 +29,12 @@ var nextBirthdayWithYear = function(person) {
 };
 
 var sortByTimeUntilBirthday = function(personA, personB) {
+  if (personA.birthday === undefined) {
+    return 1;
+  }
+  if (personB.birthday === undefined) {
+    return -1;
+  }
   var nextBirthdayA = nextBirthdayWithYear(personA);
   var nextBirthdayB = nextBirthdayWithYear(personB);
   if (nextBirthdayA < nextBirthdayB) {
@@ -41,6 +47,9 @@ var sortByTimeUntilBirthday = function(personA, personB) {
 };
 
 var age = function(person) {
+  if (person.birthday === undefined) {
+    return 0;
+  }
   return today - dateBorn(person);
 };
 
