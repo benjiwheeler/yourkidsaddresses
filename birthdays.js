@@ -54,9 +54,12 @@ var age = function(person) {
 };
 
 var birthdayFmt = function(person, fmt) {
-    var birthDate = birthdayDateWithoutYear(person);
-   // return "ht";
-    return moment(birthDate).format(fmt);
+  if (person.birthday === undefined) {
+    return "";
+  }
+  var birthDate = birthdayDateWithoutYear(person);
+  // return "ht";
+  return moment(birthDate).format(fmt);
 };
 
 var birthdayInlineStr = function(person, fmt) {
