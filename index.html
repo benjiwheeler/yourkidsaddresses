@@ -107,7 +107,7 @@ Our scientists have proven it impossible to
     <div class="address col-md-4 col-lg-3 col-xs-12 col-sm-6">
     <span ng-if="person.first === 'Gordon'"><i>(And of course...)</i><br>&nbsp;</span>
       <div class="panel panel-default">
-	<div class="panel-heading">{{person.first}} <span ng-bind-html="person.last"></span> (b. {{birthdayFmt(person, 'MMM D')}})<span ng-bind-html="spouseStr(person)"></span></div>
+	<div class="panel-heading">{{person.first}} <span ng-bind-html="person.last"></span>{{birthdayInlineStr(person, 'MMM D')}}<span ng-bind-html="spouseStr(person)"></span></div>
 	<div class="panel-body">
 	  <span ng-if="children = childrenOf(person)">
 	    <div ng-repeat="child in children | orderBy:age:true">
@@ -124,7 +124,7 @@ Our scientists have proven it impossible to
         <p ng-if="child.birthday" style="font-size: .8em;">
           (b. {{birthdayFmt(child, 'MMM D')}})
         </p>
-        <p ng-if "child.phone" style="font-size: .8em;">{{child.phone}}</p>
+        <p ng-if="child.phone" style="font-size: .8em;">{{child.phone}}</p>
         <p ng-bind-html="child.additional_info" style="font-size: .8em;"></p>
       </div>
 	    <hr>
@@ -153,7 +153,9 @@ Our scientists have proven it impossible to
 <div style="margin: 0 auto; position: relative; width: 90%; max-width: 400px">
 <ul style="list-style-type: none; margin-left: 20%; padding: 0">
 <li ng-repeat="person in people | orderBy:birthdayDateWithoutYear"><span ng-bind-html="person.nickname"></span> -
-<span ng-bind-html="birthdayFmt(person, 'MMM D')"></span></li>
+  <span ng-if="person.birthday">{{birthdayFmt(person, 'MMM D')}}</span>
+  </p>
+  </li>
 <!-- <li ng-repeat="person in people | orderBy:birthdayDate">{{person.first}} {{person.last}} - {{birthdayFmt(person, "MMM d")}}</li>
 -->
 </ul>
