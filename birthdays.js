@@ -114,6 +114,7 @@ app.controller('BirthdayController', ['$scope', 'peopleData', function($scope, p
   peopleData.fetchData().then(function(data) {
     $scope.people = data; //orderBy($scope.birthdayDate);
     $scope.birthdayFmt = birthdayFmt;
+    $scope.birthdayInlineStr = birthdayInlineStr;
     $scope.birthdayDateWithoutYear = birthdayDateWithoutYear;
     //		$scope.birthdayDateWithoutYear = birthdayDateWithoutYear;
   });
@@ -123,6 +124,7 @@ app.controller('BirthdayController', ['$scope', 'peopleData', function($scope, p
 app.controller('CalendarController', ['$scope', 'peopleData', function($scope, peopleData) {
   var peopleByUpcomingBirthday = Array();
   $scope.birthdayFmt = birthdayFmt;
+  $scope.birthdayInlineStr = birthdayInlineStr;
 
   peopleData.fetchData().then(function(data) {
     peopleByUpcomingBirthday = angular.copy(data);//people.slice(0);
@@ -144,6 +146,7 @@ function enoughAddressInfoForGoogle(address) {
 
 app.controller('AddressController', ['$scope', 'peopleData', function($scope, peopleData) {
   $scope.birthdayFmt = birthdayFmt;
+  $scope.birthdayInlineStr = birthdayInlineStr;
   peopleData.fetchData().then(function(data) {
     $scope.people = data;
   });
