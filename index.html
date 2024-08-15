@@ -112,11 +112,16 @@ Our scientists have proven it impossible to
 	  <span ng-if="children = childrenOf(person)">
 	    <div ng-repeat="child in children | orderBy:age:true">
         <span ng-if="child.photos">
-          <a href="{{flickrURL(child)}}">{{child.first}}</a>
+          <a href="{{flickrURL(child)}}">
+            {{child.first}}
+            <span ng-bind-html="child.last"></span>
+          </a>
         </span>
-        <span ng-if="!child.photos">{{child.first}}</span>
-        <span ng-bind-html="child.last"></span>
-        <p ng-if "child.birthday" style="font-size: .8em;">
+        <span ng-if="!child.photos">
+          {{child.first}}
+          <span ng-bind-html="child.last"></span>
+        </span>
+        <p ng-if="child.birthday" style="font-size: .8em;">
           (b. {{birthdayFmt(child, 'MMM D')}})
         </p>
         <p ng-if "child.phone" style="font-size: .8em;">{{child.phone}}</p>
