@@ -44,12 +44,15 @@ var age = function(person) {
   return today - dateBorn(person);
 };
 
-var  birthdayFmt = function(person, fmt) {
+var birthdayFmt = function(person, fmt) {
     var birthDate = birthdayDateWithoutYear(person);
    // return "ht";
     return moment(birthDate).format(fmt);
-  };
+};
 
+var birthdayInlineStr = function(person, fmt) {
+  return "(b. " + birthdayFmt(persion, fmt) + ")";
+};
 
 
 
@@ -182,7 +185,7 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
     var spouse = findSpouse(person);
     if (spouse !== undefined && spouse !== null) {
       // console.log("spouse.last = " + spouse.last + "; trused = " + $sce.trustAsHtml(spouse.last));
-      str = " and " + spouse.first + " " + spouse.last + " (b. " + $scope.birthdayFmt(spouse, "MMM D") + ")";
+      str = " and " + spouse.first + " " + spouse.last + " " + $scope.birthdayInlineStr(spouse, "MMM D");
     }
     return str;
   }
