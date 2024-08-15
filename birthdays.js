@@ -184,7 +184,7 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
     return spouse;
   }
   function spouseStr(person) {
-    var str = "";
+    var str = "no spouse found";
     var spouse = findSpouse(person);
     if (spouse !== undefined && spouse !== null) {
       // console.log("spouse.last = " + spouse.last + "; trused = " + $sce.trustAsHtml(spouse.last));
