@@ -184,13 +184,14 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
     return spouse;
   }
   function spouseStr(person) {
-    var str = "no spouse found";
+    var str = "";
     var spouse = findSpouse(person);
     if (spouse !== undefined && spouse !== null) {
       // console.log("spouse.last = " + spouse.last + "; trused = " + $sce.trustAsHtml(spouse.last));
       str = " and " + spouse.first + " " + spouse.last;
       if (!!spouse.birthday) {
-        str += " " + birthdayInlineStr(spouse, "MMM D");
+        str = "found spouse birthday!";
+        // str += " " + birthdayInlineStr(spouse, "MMM D");
       }
     }
     return str;
@@ -208,6 +209,6 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
       return $scope.children[person.id];
     } else {
       return findChildren(person);
-      }
+    }
 };
 }]);
