@@ -5,6 +5,9 @@ var birthdayDateForYear = function(person, year) {
   return new Date(year, person.birthday.monthnum - 1, person.birthday.daynum);
 };
 var birthdayDateWithoutYear = function(person) {
+  if (person.birthday === undefined) {
+    return new Date(3000, 0, 1); // far in the future
+  }
   var birthDate = birthdayDateForYear(person, 2015);
 //  console.log(person.first + birthDate + person.birthday.daynum);
   return birthDate;
