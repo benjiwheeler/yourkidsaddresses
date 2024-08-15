@@ -53,6 +53,21 @@
       ,"birthday": {"monthnum": 1, "daynum": 1, "year": 1900}
   }
 
+  ,{"id": "AnastasiaV"
+      ,"first": "Anastasia"
+      ,"nickname": "Anastasia V"
+      ,"last": "V"
+      ,"spouse_of": "DavidZ"
+  }
+
+  ,{"id": "NoahZ"
+      ,"first": "Noah"
+      ,"nickname": "Noah"
+      ,"last": "Z"
+      ,"child_of": "DavidZ"
+      ,"birthday": {"monthnum": 6, "daynum": 24, "year": 2024}
+   }
+
   ,{"id": "AlexZ"
    ,"first": "Alex"
    ,"nickname": "Alex Z"
@@ -66,6 +81,13 @@
     }]
    ,"phone": "(203) 247-4738"
       ,"birthday": {"monthnum": 5, "daynum": 30, "year": 1987}
+  }
+
+  ,{"id": "SydneyB"
+      ,"first": "Sydney"
+      ,"nickname": "Sydney B"
+      ,"last": "B"
+      ,"spouse_of": "AlexZ"
   }
 
   ,{"id": "JackW"
