@@ -193,8 +193,7 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
       // console.log("spouse.last = " + spouse.last + "; trused = " + $sce.trustAsHtml(spouse.last));
       str = " and " + spouse.first + " " + spouse.last;
       if (!!spouse.birthday) {
-        str = "found spouse birthday!";
-        // str += " " + birthdayInlineStr(spouse, "MMM D");
+        str += " " + birthdayInlineStr(spouse, "MMM D");
       }
     }
     return str;
