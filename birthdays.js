@@ -54,7 +54,7 @@ var birthdayInlineStr = function(person, fmt) {
   if (person.birthday === undefined) {
     return "";
   }
-  return "(b. " + birthdayFmt(persion, fmt) + ")";
+  return "(b. " + birthdayFmt(person, fmt) + ")";
 };
 
 
