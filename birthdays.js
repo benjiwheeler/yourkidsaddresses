@@ -51,6 +51,9 @@ var birthdayFmt = function(person, fmt) {
 };
 
 var birthdayInlineStr = function(person, fmt) {
+  if (person.birthday === undefined) {
+    return "";
+  }
   return "(b. " + birthdayFmt(persion, fmt) + ")";
 };
 
@@ -185,7 +188,10 @@ app.controller('AddressController', ['$scope', 'peopleData', function($scope, pe
     var spouse = findSpouse(person);
     if (spouse !== undefined && spouse !== null) {
       // console.log("spouse.last = " + spouse.last + "; trused = " + $sce.trustAsHtml(spouse.last));
-      str = " and " + spouse.first + " " + spouse.last + " " + $scope.birthdayInlineStr(spouse, "MMM D");
+      str = " and " + spouse.first + " " + spouse.last;
+      if (!!spouse.birthday) {
+        str += " " + $scope.birthdayInlineStr(spouse, "MMM D");
+      }
     }
     return str;
   }

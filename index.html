@@ -116,7 +116,9 @@ Our scientists have proven it impossible to
         </span>
         <span ng-if="!child.photos">{{child.first}}</span>
         <span ng-bind-html="child.last"></span>
-        (b. {{birthdayFmt(child, 'MMM D')}})
+        <p ng-if "child.birthday" style="font-size: .8em;">
+          (b. {{birthdayFmt(child, 'MMM D')}})
+        </p>
         <p ng-if "child.phone" style="font-size: .8em;">{{child.phone}}</p>
         <p ng-bind-html="child.additional_info" style="font-size: .8em;"></p>
       </div>
