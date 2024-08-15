@@ -128,7 +128,7 @@ app.controller('CalendarController', ['$scope', 'peopleData', function($scope, p
 
   peopleData.fetchData().then(function(data) {
     peopleByUpcomingBirthday = angular.copy(data);//people.slice(0);
-    peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
+    peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday).reverse();
   });
 
   $scope.nPeopleByUpcomingBirthday = function(numPeople) {
