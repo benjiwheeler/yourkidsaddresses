@@ -47,7 +47,7 @@ var sortByTimeUntilBirthday = function(personA, personB) {
 };
 
 var age = function(person) {
-  if (person.birthday === undefined) {
+  if (person.birthday === undefined || person.birthday === null || person.birthday === "") {
     return 0;
   }
   return today - dateBorn(person);
@@ -137,7 +137,7 @@ app.controller('CalendarController', ['$scope', 'peopleData', function($scope, p
 
   peopleData.fetchData().then(function(data) {
     peopleByUpcomingBirthday = angular.copy(data);//people.slice(0);
-    peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday).reverse();
+    peopleByUpcomingBirthday.sort(sortByTimeUntilBirthday);
   });
 
   $scope.nPeopleByUpcomingBirthday = function(numPeople) {
