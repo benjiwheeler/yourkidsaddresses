@@ -34,7 +34,7 @@
 <div class="banner bg-success" ng-controller="CalendarController" ng-show="anyToShow()" ng-cloak>
 <b style="float: left;">Upcoming birthdays:</b>
 <ul class="list-inline" >
-<li ng-repeat="person in nPeopleByUpcomingBirthday(3)">{{person.nickname}}</span> -
+<li ng-repeat="person in nPeopleByUpcomingBirthday(5)">{{person.nickname}}</span> -
 {{birthdayFmt(person, "MMM D")}}
 </li>
 </ul>
