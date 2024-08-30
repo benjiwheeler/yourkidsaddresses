@@ -1,14 +1,14 @@
 
 @font-face {
   font-family: 'Littledays';
-  src: url('Littledays.ttf')  format('truetype');
+  src: url('../fonts/Littledays.ttf')  format('truetype');
 }
 
 
   body { font-family: verdana, arial, sans-serif; font-size: small;
 /* border: 10px solid
 #453900; */
-background-image: url("skulls.png");
+background-image: url("../images/skulls.png");
  }
   td { font-family: verdana; font-size: small; }
 
@@ -48,9 +48,9 @@ div.panel-body hr {
 margin-bottom: 10px;
 }
 
-.address {
-// height: 18em;
-}
+/* .address {
+ height: 18em;
+} */
 
 img {
 border: 2px solid #59a;

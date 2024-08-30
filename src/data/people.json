@@ -44,14 +44,14 @@
       ,"last": "Z"
       ,"owner": true
    ,"address": [{
-       "street": ["332 Franklin St. Apt. 201"]
-         ,"city": "Cambridge"
+       "street": ["24 Vine St."]
+         ,"city": "Winchester"
          ,"state": "MA"
-         ,"zip": "02139"
+         ,"zip": "01890-1823"
     }]
    ,"phone": "(203) 247-3351"
-      ,"birthday": {"monthnum": 1, "daynum": 1, "year": 1900}
-  }
+   ,"birthday": {"monthnum": 5, "daynum": 30, "year": 1989}
+}
 
   ,{"id": "AnastasiaV"
       ,"first": "Anastasia"
