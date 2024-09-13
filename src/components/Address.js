@@ -14,31 +14,35 @@ const Address = ({ person }) => {
       </div>
       <div className="panel-body">
         {person.children && person.children.sort(sortByAge).map(child => (
-          <>
-            {child.photos ? (
-              <a href={child.photos}>
-                {child.first}
-                {child.last}
-              </a>
-            ) : (
-              <>
-                {child.first}
-                {child.last}
-              </>
-            )}
-            {child.birthday && (
-              <p style={{fontSize: ".8em"}}>{birthdayInlineStr(child)}</p>
-            )}
-            {child.phone && (
-              <p style={{fontSize: ".8em"}}>{child.phone}</p>
-            )}
-            {child.additional_info && (
-              <p style={{fontSize: ".8em"}} dangerouslySetInnerHTML={{ __html: child.additional_info}} />
-            )}
-          </>
+          <ul style={{listStyleType: "None", paddingLeft: 0}}>
+            <li>
+              {child.photos ? (
+                <a href={child.photos}>
+                  {child.first}&nbsp;
+                  {child.last}
+                </a>
+              ) : (
+                <>
+                  {child.first}&nbsp;
+                  {child.last}
+                </>
+              )}
+              <ul style={{listStyleType: "None", paddingLeft: "1rem"}}>
+                {child.birthday && (
+                  <p style={{fontSize: ".8em"}}>{birthdayInlineStr(child)}</p>
+                )}
+                {child.phone && (
+                  <p style={{fontSize: ".8em"}}>{child.phone}</p>
+                )}
+                {child.additional_info && (
+                  <p style={{fontSize: ".8em"}} dangerouslySetInnerHTML={{ __html: child.additional_info}} />
+                )}
+              </ul>
+              </li>
+          </ul>
         ))}
         <hr />
-        <ul>
+        <ul style={{listStyleType: "None"}}>
           {person.address.map(address => (
             <li key={address.street[0]}>
               {person.phone && (
