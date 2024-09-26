@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/' // Note: may need to adjust this
   },
@@ -18,7 +18,9 @@ module.exports = {
       patterns: [
         { from: 'src/images', to: 'images' },
         { from: 'src/styles', to: 'styles' },
-        { from: 'src/fonts', to: 'fonts' }
+        { from: 'src/fonts', to: 'fonts' },
+        // move these to the top level directory, NOT a subdirectory
+        { from: 'src/deploy', to: '' },
       ],
     }),
   ],
@@ -34,7 +36,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
     ]
   },
   devServer: {
@@ -46,5 +48,5 @@ module.exports = {
     open: true,
     hot: false, // Disable Hot Module Replacement
     liveReload: true // Enable full page reload
-  }
+  },
 };
