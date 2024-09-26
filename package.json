@@ -1,5 +1,6 @@
 {
   "homepage": "https://benjiwheeler.github.io/yourkidsaddresses",
+  
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
