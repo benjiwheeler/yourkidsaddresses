@@ -13,7 +13,7 @@ const Footer = () => (
       that you have been invited to in the past, but which you have somehow lost track of, and
       are too embarrassed to ask your grandchildren to help you find
     </div>
-    <div class="col-xs-0 col-sm-4 col-sm-12 col-lg-4">
+    <div class="hidden-xs col-sm-4 col-sm-12 col-lg-4">
       &nbsp;
     </div>
     <div class="col-xs-12">

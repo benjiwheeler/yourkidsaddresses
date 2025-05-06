@@ -7,7 +7,7 @@ export const spouseStr = person => {
     // console.log("spouse.last = " + spouse.last + "; trused = " + $sce.trustAsHtml(spouse.last));
     str = " and " + spouse.first + " " + spouse.last;
     if (!!spouse.birthday) {
-      str += "&nbsp;" + birthdayInlineStr(spouse);
+      str += " " + birthdayInlineStr(spouse);
     }
   }
   return str;
