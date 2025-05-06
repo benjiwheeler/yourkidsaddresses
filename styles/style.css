@@ -3,6 +3,10 @@
   outline: 1px solid red !important;
 }
 
+div, span, section, header, footer, article {
+  outline: 5px dashed orange !important;
+}
+
 @font-face {
   font-family: 'Littledays';
   src: url('../fonts/Littledays.ttf')  format('truetype');
