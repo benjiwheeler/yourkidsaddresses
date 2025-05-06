@@ -9,7 +9,7 @@ const Address = ({ person }) => {
       <div className="panel-heading">
         {person.first}&nbsp;
         {person.last}&nbsp;
-        {birthdayInlineStr(person)}
+        {birthdayInlineStr(person)}&nbsp;
         {spouseStr(person)}
       </div>
       <div className="panel-body">
@@ -56,8 +56,8 @@ const Address = ({ person }) => {
                 <span key={streetLine.id}>{streetLine}</span>
               ))}
               <br />
-              {address.city},
-              {address.state}
+              {address.city},&nbsp;
+              {address.state}&nbsp;
               {address.zip}
               <br />
               [ <a href={googleMapsURL(address)}>Google map</a> ]

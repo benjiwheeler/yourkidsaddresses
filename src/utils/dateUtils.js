@@ -21,7 +21,7 @@ export const birthdayInlineStr = function(person) {
   if (person.birthday === undefined) {
     return "";
   }
-  return " (b. " + birthdayFmt(person.birthday) + ")";
+  return "(b. " + birthdayFmt(person.birthday) + ")";
 };
 
 const birthdayDateForYear = function(person, year) {
