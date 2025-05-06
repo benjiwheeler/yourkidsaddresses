@@ -1,4 +1,8 @@
 
+* {
+  outline: 1px solid red !important;
+}
+
 @font-face {
   font-family: 'Littledays';
   src: url('../fonts/Littledays.ttf')  format('truetype');
