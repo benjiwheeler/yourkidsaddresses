@@ -17,10 +17,11 @@ const Address = ({ person }) => {
           <ul style={{listStyleType: "None", paddingLeft: 0}}>
             <li>
               {child.photos ? (
-                <a href={child.photos}>
+                <>
                   {child.first}&nbsp;
-                  {child.last}
-                </a>
+                  {child.last}&nbsp;
+                  [<a href={child.photos}>photos</a>]
+                </>
               ) : (
                 <>
                   {child.first}&nbsp;

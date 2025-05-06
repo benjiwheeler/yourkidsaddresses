@@ -11,7 +11,7 @@ const spouseOf = person => (
   peopleData.find(candidate => candidate.hasOwnProperty('spouse_of') && (candidate.spouse_of === person.id))
 );
 
-console.log("here");
+// console.log("here");
 
 const usePeopleData = () => {
   const [data, setData] = useState([]);

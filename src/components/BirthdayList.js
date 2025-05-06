@@ -3,8 +3,8 @@ import React from 'react';
 import { birthdayFmt } from '../utils/dateUtils';
 
 const BirthdayList = ({ sortedPeople }) => {
-  console.log("in BirthdayList component, sortedPeople is:");
-  console.log(sortedPeople);
+  // console.log("in BirthdayList component, sortedPeople is:");
+  // console.log(sortedPeople);
   return (
     <div>
       <h1>Birthdays</h1>
