@@ -38,6 +38,15 @@
       ,"birthday": {"monthnum": 7, "daynum": 4, "year": 1985}
   }
 
+  ,{"id": "RoseW"
+      ,"first": "Rose"
+      ,"nickname": "Rosie"
+      ,"last": "Wheeler"
+      ,"child_of": "AlexW"
+      ,"birthday": {"monthnum": 7, "daynum": 28, "year": 2025}
+      ,"photos": ""
+  }
+
   ,{"id": "DavidZ"
    ,"first": "David"
    ,"nickname": "David Z"
